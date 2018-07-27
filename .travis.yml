@@ -8,3 +8,8 @@ install: true
 
 script: VERBOSE=true make test
 
+deploy:
+  provider: script
+  script: deploy.sh
+  on:
+    all_branches: true
