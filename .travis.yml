@@ -10,6 +10,7 @@ script: VERBOSE=true make test
 
 deploy:
   provider: script
+  skip_cleanup: true
   script: deploy.sh
   on:
     all_branches: true
