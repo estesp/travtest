@@ -6,7 +6,7 @@ services:
 
 install: true
 
-script: VERBOSE=true make test
+script: VERBOSE=true make build
 
 deploy:
   provider: script
